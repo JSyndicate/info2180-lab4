@@ -74,3 +74,6 @@ $superheroes = [
 <?php
     header('Access-Control-Allow-Origin: *');
 ?>
+<div id="result"></div>
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $name = filter_input(INPUT_POST, 'Name', FILTER_SANITIZE_STRING);
