@@ -8,13 +8,13 @@ window.onload=function(){
 
         httpRequest = new XMLHttpRequest();
         var url = "http://localhost/info2180-lab4/superheroes.php";
-        httpRequest.onreadystatechange = searchLog;
+        httpRequest.onreadystatechange = searchName;
         httpRequest.open('GET', url);
         httpRequest.send();
 
     });
 
-    function searchLog(){
+    function searchName(){
         if (httpRequest.readyState == XMLHttpRequest.DONE){
             if (httpRequest.status == 200){
                var response = httpRequest.responseText;
